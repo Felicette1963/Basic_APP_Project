@@ -192,9 +192,10 @@ class streamlit_HTML:
         일어나서 저 환호소리를 들어
         
     '''
-    Img_Path
+    Img_Path = "Image/"
     def __init__(self):
         self.streamlit_head();
+        self.stream_Img();
         self.streamlit_Video();
     def streamlit_head(self):
         st.title("나의 파이썬 웹 페이지")
@@ -205,3 +206,4 @@ class streamlit_HTML:
         st.write(self.Vido_lyrics)
 
     def stream_Img(self):
+        st.image(self.Img_Path + "title.png", width=100)
